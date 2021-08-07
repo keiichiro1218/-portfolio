@@ -1,0 +1,35 @@
+.p-search-form {    
+
+    label {
+        color: white;
+        position: relative;
+        height: 40px;
+        display: block;
+        max-width: 400px;
+        width: 80%;
+        margin: 30px auto 0;
+
+        .search-field {
+            color: black;
+            background-color: white;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: '\f002';
+            border-radius: 10px;
+            height: 40px;
+            padding-left: 10px;
+            width: 100%;
+            
+        }
+        .search-submit {
+            background: #ececec;
+            padding: 10px 10px;
+            border-radius: 10px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 40px;
+            color: black;
+        }
+    }
+}

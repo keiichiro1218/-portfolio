@@ -1,0 +1,17 @@
+.c-drawer {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    background: rgba(#000, 0.8);
+    z-index: 40;
+    transform: translateX(100%);
+    transition: all .3s linear;
+    
+    &.is-active {
+        display: block;
+        transform: translateX(0);
+
+    }
+}

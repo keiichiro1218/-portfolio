@@ -1,0 +1,12 @@
+.p-footer-menu {
+    margin: 15px 0;
+    
+    &__list {
+        display: flex;
+        justify-content: center;
+
+        :nth-child( n + 2 ) {
+            margin-left: 10px;
+        }
+    }
+}

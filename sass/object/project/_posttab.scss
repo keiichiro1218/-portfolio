@@ -1,0 +1,28 @@
+.p-posttab {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    margin-bottom: 50px;
+    font-family: sans-serif;
+
+    
+    h2 {
+        letter-spacing: 10px;
+        font-size: 20px;
+
+        @include media (tab-up) {
+            font-size: 25px;
+
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 1px;
+            background: #6779a5;
+            margin: 10px auto 0;
+        }
+    }
+}

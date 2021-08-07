@@ -1,0 +1,7 @@
+.p-search {
+    margin-bottom: 30px;
+
+    @include media(tab-up) {
+        font-size: 22px;
+    }
+}

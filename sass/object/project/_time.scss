@@ -1,0 +1,31 @@
+.p-time {
+
+    time {
+        display: flex;
+        justify-content: center;
+    
+        .p-time__post {
+    
+            &::before {
+                content: "\f021";
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                padding-right: 5px;
+        
+            }
+        }
+    
+        .p-time__modified {
+    
+            &::before {
+                content: "\f021";
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                padding-right: 5px;
+        
+            }
+        }
+    
+    }
+}
+    

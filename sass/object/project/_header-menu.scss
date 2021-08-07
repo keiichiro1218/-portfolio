@@ -1,0 +1,16 @@
+.p-header-menu {
+
+    @include media (pc) {
+        display: none;
+
+    }
+
+    &__list {
+        display: flex;
+
+        li {
+            margin: 0 10px;
+            font-size: 20px;
+        }
+    }
+}

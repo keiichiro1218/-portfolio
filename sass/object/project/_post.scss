@@ -1,0 +1,124 @@
+.p-post__card {
+    @include media(mb){
+        display: flex;
+        flex-wrap:wrap;
+
+    }
+}
+
+.p-post__article {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 0 25px;
+    background: #fff;
+
+    @include media(mb){
+       width: 48%;
+
+    }
+
+    @include media(tab){
+        &:nth-child(2n) {
+            margin-left: auto;
+        }
+    }
+
+    @include media (tab-up) {
+        width: 30%;
+
+        &:nth-child(n + 4) {
+            margin-top: 30px;
+        }
+
+        &:not(:nth-child(3n + 1)){
+            margin-left: 3%;
+        }                
+    }
+    
+}
+
+.p-post__link {
+    display: block;
+
+}
+
+.p-post__img {
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    height: 0;
+    padding-bottom: 50%;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+       
+    }
+}
+
+.p-post__articleinfo {
+    padding: 10px 15px;
+
+    h2 {
+        font-size: 17px;
+
+    }
+}
+
+.p-post__time {
+    display: block;
+    margin: 0 15px 8px 0;
+    color: #b5b5b5;
+    font-size: 13px;
+    font-weight: bold;
+
+    // &::before {
+    //     content: "\f021";
+    //     font-family: "Font Awesome 5 Free";
+    //     font-weight: 900;
+    //     padding-right: 5px;
+
+    // }
+}
+
+.p-post__time-none {
+    display: block;
+    height: 21px;
+}
+
+.p-post__category {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    height: 22px;
+    line-height: 22px;
+    color: #ffff;
+    background: #6779a5;
+    vertical-align: middle;
+    border-radius: 14px;
+    padding: 0 10px;
+    font-size: 11px;
+    display: inline-block;
+
+}
+
+.p-post__tag {
+    background-color: #ffb36b;
+    display: inline-block;
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    width: 37px;
+    height: 37px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 37px;
+    transform-origin: 50% 50%;
+    animation: animScale 3.5s ease-out;
+
+}
