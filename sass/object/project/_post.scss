@@ -1,5 +1,5 @@
 .p-post__card {
-    @include media(mb){
+    @include media(mb-up){
         display: flex;
         flex-wrap:wrap;
 
@@ -13,7 +13,7 @@
     margin: 0 0 25px;
     background: #fff;
 
-    @include media(mb){
+    @include media(mb-up){
        width: 48%;
 
     }

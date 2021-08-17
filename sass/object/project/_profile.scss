@@ -1,4 +1,9 @@
 .p-profile {
     background: #ececec;
     padding: 60px 0;
+
+    @include media (tab) {
+        padding: 30px;
+
+    }
 }

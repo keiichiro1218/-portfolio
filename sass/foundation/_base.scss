@@ -1,5 +1,6 @@
 body{
-	font-family:"YuMincho","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+	// font-family:"YuMincho","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+	font-family:"YuMincho"," serif","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
     font-weight: 500;
     font-size: 16px;
 
@@ -14,5 +15,14 @@ img {
     border: 0;
     vertical-align: middle;
 
+}
+
+.size-large {
+
+    img {
+        width: 100%;
+        height: auto;
+
+    }
 }
 

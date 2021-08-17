@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  font-family: "YuMincho", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  font-family: "YuMincho", " serif", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   font-weight: 500;
   font-size: 16px;
 }
@@ -13,6 +13,11 @@ img {
   height: auto;
   border: 0;
   vertical-align: middle;
+}
+
+.size-large img {
+  width: 100%;
+  height: auto;
 }
 
 /*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
@@ -517,12 +522,13 @@ template {
         -ms-flex-align: center;
             align-items: center;
     width: 80%;
+    height: inherit;
   }
 }
 
 .l-header__title {
   color: #1e1e1e;
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 500;
 }
 
@@ -702,6 +708,71 @@ template {
   margin-top: 10px;
 }
 
+.p-custom-field table {
+  font-size: 8px;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+@media screen and (min-width: 480px) {
+  .p-custom-field table {
+    font-size: 16px;
+  }
+}
+
+tbody {
+  border: black solid;
+}
+@media screen and (max-width: 480px) {
+  tbody tr, tbody th, tbody td {
+    display: block;
+  }
+}
+tbody th {
+  text-align: center;
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#829ebc), to(#225588));
+  background: linear-gradient(#829ebc, #225588);
+  border-left: 1px solid #3c6690;
+  border-top: 1px solid #3c6690;
+  border-bottom: 1px solid #3c6690;
+  -webkit-box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3) inset;
+          box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3) inset;
+  width: 25%;
+  width: 100%;
+  padding: 10px 0;
+}
+@media screen and (min-width: 769px) {
+  tbody th {
+    width: 25%;
+  }
+}
+tbody td {
+  border-left: 1px solid #a8b7c5;
+  border-bottom: 1px solid #a8b7c5;
+  border-top: 1px solid #3c6690;
+  -webkit-box-shadow: 0px -3px 5px 1px #eee inset;
+          box-shadow: 0px -3px 5px 1px #eee inset;
+  width: 100%;
+  padding: 10px;
+}
+
+.url, .cord, .works {
+  text-align: center;
+}
+
+table td:last-child {
+  border-right: 1px solid #a8b7c5;
+}
+
+table tr:last-child td:first-child {
+  border-radius: 0 0 0 5px;
+}
+
+table tr:last-child td:last-child {
+  border-radius: 0 0 5px 0;
+}
+
 .p-footer-menu {
   margin: 15px 0;
 }
@@ -731,6 +802,31 @@ template {
   margin: 0 10px;
   font-size: 20px;
 }
+.p-header-menu__list li a {
+  line-height: 60px;
+  display: block;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+.p-header-menu__list li a::after {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #333;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.p-header-menu__list li a:hover::after {
+  bottom: 8px;
+  opacity: 1;
+  visibility: visible;
+}
 
 .p-menu ul li {
   color: #ffff;
@@ -750,15 +846,14 @@ template {
           justify-content: center;
   height: 60px;
   margin-bottom: 50px;
-  font-family: sans-serif;
 }
 .p-posttab h2 {
   letter-spacing: 10px;
-  font-size: 20px;
+  font-size: 16px;
 }
 @media screen and (min-width: 769px) {
   .p-posttab h2 {
-    font-size: 25px;
+    font-size: 24px;
   }
 }
 .p-posttab h2::after {
@@ -902,6 +997,11 @@ template {
   background: #ececec;
   padding: 60px 0;
 }
+@media screen and (max-width: 769px) {
+  .p-profile {
+    padding: 30px;
+  }
+}
 
 .p-search {
   margin-bottom: 30px;
@@ -1025,12 +1125,17 @@ template {
   margin-bottom: 30px;
 }
 .p-title h2 {
-  font-size: 30px;
+  font-size: 24px;
   margin: 20px;
 }
 
 .p-works {
   background: #f5f1f1;
   padding: 60px 0;
+}
+@media screen and (max-width: 769px) {
+  .p-works {
+    padding: 30px 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -16,6 +16,43 @@
             </div>
             <div class="p-post-content">
                 <?php the_content(); ?>
+                <div class="p-custom-field">
+                    <table>
+                        <tbody class="aaaa">
+                            <?php if ( get_field( 'works' ) ) : ?> 
+                            <tr>
+                                <th>Works</th>
+                                <td class="works"><?php the_field( 'works' ); ?></td>
+                            </tr>
+                            <?php endif; ?>
+
+                            <?php if ( get_field( 'url' ) ) : ?>
+                            <tr>
+                                <th>サイトURL</th>
+                                <td class="url">
+                                    <a href="<?php the_field( 'url' ); ?>">
+                                        <?php the_field( 'url' ); ?>
+                                    </a>
+                                </td>
+                            </tr>
+                            <?php endif; ?>
+                            <?php if ( get_field( 'cord' ) ) : ?>
+                                <tr>
+                                <th>ソースコード</th>
+                                <td class="cord"><?php the_field( 'cord' ); ?></td>
+                                </tr>
+                            <?php endif; ?>
+                            <?php if ( get_field( 'overview' ) ) : ?>
+                            <tr>
+                            <th>制作概要</th>
+                            <td><?php the_field( 'overview' ); ?></td>
+                            </tr>
+                            <?php endif; ?>
+                        </tbody>
+                       
+                </table>
+
+                </div>
             </div>
         </div>
     </div>

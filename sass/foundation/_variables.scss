@@ -1,5 +1,6 @@
 $breakpoints: (
-  'mb': 'screen and (min-width: 480px)',
+  'mb': 'screen and (max-width: 480px)',
+  'mb-up': 'screen and (min-width: 480px)',
   'tab': 'screen and (max-width: 769px)',
   'tab-up': 'screen and (min-width: 769px)',
   'pc-up': 'screen and (min-width: 1024px)',

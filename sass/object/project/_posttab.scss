@@ -4,15 +4,13 @@
     justify-content: center;
     height: 60px;
     margin-bottom: 50px;
-    font-family: sans-serif;
-
     
     h2 {
         letter-spacing: 10px;
-        font-size: 20px;
+        font-size: 16px;
 
         @include media (tab-up) {
-            font-size: 25px;
+            font-size: 24px;
 
         }
 
